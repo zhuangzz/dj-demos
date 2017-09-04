@@ -3,9 +3,9 @@ import "./button.css"
 
 class Button extends Component{
   render(){
-    const {text}=this.props
+    const {children}=this.props
     return(<div className="button">
-      {text}
+      {children}
     </div>)
   }
 }

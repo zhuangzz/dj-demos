@@ -6,7 +6,7 @@ class Login extends Component{
   render(){
     return(<div className="login">
       login
-      <Button text="注册" />
+      <Button>注册</Button>
     </div>)
   }
 }
