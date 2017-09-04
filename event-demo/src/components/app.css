@@ -1,0 +1,12 @@
+.cli{
+
+}
+button{
+   outline:none;
+   width: 80px;
+   line-height: 30px;
+   font-size: 25px;
+   color: #fff;
+   background-color: lightgreen;
+   border-radius: 10%;
+}

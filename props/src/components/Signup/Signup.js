@@ -7,6 +7,9 @@ class Signup extends Component{
     return(<div className="signup">
       Signup
       <Button>登录</Button>
+
+
+
     </div>)
   }
 }
