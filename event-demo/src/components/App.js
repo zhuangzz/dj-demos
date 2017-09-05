@@ -14,7 +14,8 @@ class App extends Component{
         text: 'Hi'
       }
     ],
-    checked: false
+    checked: false,
+    background:"none"
   }
   Sayhello =()=>{
     console.log("haha hello")
@@ -37,6 +38,11 @@ class App extends Component{
        checked: !this.state.checked
     })
   }
+  handleColor=()=>{
+    this.setState({
+      background:"yellow"
+    })
+  }
   render(){
     const list = this.state.comments.map((item, i) => (
       <li key={i}>{`${item.name}: ${item.text}`}</li>
@@ -53,7 +59,8 @@ class App extends Component{
          {list}
       </ul>
       <div className="color" onClick={this.ChangeColor} style={style}>123</div>
-    </div>)
+      <div className="color1" onClick={this.handleColor} style={{background:this.state.background}}>456</div>
+  </div>)
   }
 }
 
