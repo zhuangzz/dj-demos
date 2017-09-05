@@ -15,7 +15,9 @@ class App extends Component{
       }
     ],
     checked: false,
-    background:"none"
+    background:"none",
+    active:false,
+    active1:false
   }
   Sayhello =()=>{
     console.log("haha hello")
@@ -43,6 +45,16 @@ class App extends Component{
       background:"yellow"
     })
   }
+  handleColors=()=>{
+    this.setState({
+      active: !this.state.active
+    })
+  }
+  handleSiderbar=()=>{
+    this.setState({
+      active1: !this.state.active1
+    })
+  }
   render(){
     const list = this.state.comments.map((item, i) => (
       <li key={i}>{`${item.name}: ${item.text}`}</li>
@@ -60,7 +72,14 @@ class App extends Component{
       </ul>
       <div className="color" onClick={this.ChangeColor} style={style}>123</div>
       <div className="color1" onClick={this.handleColor} style={{background:this.state.background}}>456</div>
-  </div>)
+      <div onClick={this.handleColors} className={`colorr ${this.state.active&&"active"}`}>789</div>
+      <div className="sidebar">
+        <span className={`left ${this.state.active1&&"act"}`}></span>
+        <span className={`right ${this.state.active1&&"act"}`}>
+          <button onClick={this.handleSiderbar}>8</button>
+        </span>
+      </div>
+</div>)
   }
 }
 

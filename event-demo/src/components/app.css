@@ -18,3 +18,62 @@ button{
   text-align: center;
   color: #fff;
 }
+.color1{
+  width: 200px;
+  line-height: 30px;
+  font-size: 25px;
+  border-radius: 10%;
+  text-align: center;
+  background: blue;
+}
+.colorr{
+  background: blue;
+  width: 200px;
+  text-align: center;
+  color:#fff;
+  line-height: 30px;
+  border-radius: 10%;
+  font-size: 25px;
+}
+.colorr.active {
+  background:yellow;
+    width: 200px;
+    text-align: center;
+    color:#fff;
+    line-height: 30px;
+    border-radius: 10%;
+    font-size: 25px;
+}
+.sidebar{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.left{
+  display:block;
+  width: 100px;
+  background-color: lightgreen;
+  line-height: 40px;
+  height:300px;
+  transition: all 0.5s;
+}
+.left.act{
+  display:block;
+  margin-left: -108px;
+  transition: all 0.5s;
+  height:300px;
+}
+.right{
+  width: 300px;
+  height:300px;
+}
+.right.act{
+  display:block;
+
+  width: 400px;
+  transition: all 3s;
+  height:300px;
+}
+.right button{
+  margin-left: 20px;
+}
