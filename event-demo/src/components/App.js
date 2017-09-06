@@ -73,10 +73,10 @@ class App extends Component{
       <div className="color" onClick={this.ChangeColor} style={style}>123</div>
       <div className="color1" onClick={this.handleColor} style={{background:this.state.background}}>456</div>
       <div onClick={this.handleColors} className={`colorr ${this.state.active&&"active"}`}>789</div>
-      <div className="sidebar">
+      <div className="siderbar">
         <span className={`left ${this.state.active1&&"act"}`}></span>
         <span className={`right ${this.state.active1&&"act"}`}>
-          <button onClick={this.handleSiderbar}>8</button>
+          <button onClick={this.handleSiderbar}></button>
         </span>
       </div>
 </div>)
