@@ -1,6 +1,7 @@
 import React ,{Component} from "react"
 import "./app.css"
 import Logo from "../Logo/Logo"
+import logoo from "./bag.svg"
 
 class App extends Component{
   state = {
@@ -24,6 +25,7 @@ class App extends Component{
         <ul className='app' >
           {list}
         </ul>
+        <img src={logoo} className="logo" alt="logo"/>
         <Logo color="hotpink" size="40px"/>
       </div>
 
