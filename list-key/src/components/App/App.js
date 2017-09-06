@@ -1,12 +1,10 @@
 import React ,{Component} from "react"
 import "./app.css"
+import logo from "./bag.svg"
+
 class App extends Component{
   state = {
-  size : [
-    {size:"M"} ,
-    {size:"L"}  ,
-    {size:"XL"}  ,
-    {size:"XXL"}],
+  size : ["M" ,"L" ,"XL","XXL"],
   activeIndex:0
   }
   handleChose=(i)=>{
@@ -19,12 +17,16 @@ class App extends Component{
   render () {
     const list=this.state.size.map((item,i) => (
       <li key={i} onClick={()=>this.handleChose(i)} className={`lis ${i===this.state.activeIndex && "active"}`}
-         >{`${item.size}`}</li>
+         >{`${item}`}</li>
     ))
     return (
-      <ul className='app' >
-        {list}
+      <div>
+        <ul className='app' >
+          {list}
         </ul>
+        <img className="logo" src={logo} alt="logo"/>
+      </div>
+
     )
   }
 }
