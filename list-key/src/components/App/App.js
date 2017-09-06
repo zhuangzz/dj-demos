@@ -1,6 +1,6 @@
 import React ,{Component} from "react"
 import "./app.css"
-import logo from "./bag.svg"
+import Logo from "../Logo/Logo"
 
 class App extends Component{
   state = {
@@ -24,10 +24,10 @@ class App extends Component{
         <ul className='app' >
           {list}
         </ul>
-        <img className="logo" src={logo} alt="logo"/>
+        <Logo color="hotpink" size="40px"/>
       </div>
 
     )
   }
-}
+}// <img className="logo" src={logo} alt="logo"/>
 export default App
